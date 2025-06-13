@@ -1,0 +1,45 @@
+.app-root {
+  background: #181818; /* ou la couleur de fond de ta maquette */
+  min-height: 100vh;
+}
+
+.header {
+  background: #fff;
+  padding: 0 32px;
+  border-bottom: 2px solid #e0e0e0; /* ligne horizontale */
+  height: 90px;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+}
+
+.app-main {
+  display: flex;
+  height: calc(100vh - 90px); /* ajuste selon la hauteur du header */
+}
+
+.sidebar {
+  background: #fff;
+  min-width: 220px;
+  padding-top: 24px;
+  height: 100%;
+  position: relative;
+}
+.sidebar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100vh;
+  background: #e0e0e0;
+  z-index: 2;
+ 
+}
+
+.app-content {
+  flex: 1;
+  background: #fff;
+  padding: 32px;
+}
