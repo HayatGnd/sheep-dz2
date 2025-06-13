@@ -1,9 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Ajoute ceci
 
 import homeIcon from "../assets/home.png";
 import sheepIcon from "../assets/card.png";
 import calendarIcon from "../assets/calendar.png";
 import paymentIcon from "../assets/paymen.png";
+import logoutIcon from "../assets/logout.png";
 import "./sidebare.css";
 
 function Sidebar() {
@@ -11,10 +13,12 @@ function Sidebar() {
     <div className="sidebar">
       <ul className="sidebar-menu">
         <li className="sidebar-item">
-          <span className="icon-wrapper">
-            <img src={homeIcon} alt="Home" className="icon" />
-          </span>
-          <span className="sidebar-text">Home</span>
+          <Link to="/" className="sidebar-link">
+            <span className="icon-wrapper">
+              <img src={homeIcon} alt="Home" className="icon" />
+            </span>
+            <span className="sidebar-text">Home</span>
+          </Link>
         </li>
         <li className="sidebar-item">
           <span className="icon-wrapper">
@@ -35,6 +39,12 @@ function Sidebar() {
           <span className="sidebar-text">Payment</span>
         </li>
       </ul>
+      <div className="sidebar-item sidebar-logout">
+        <span className="icon-wrapper">
+          <img src={logoutIcon} alt="Logout" className="icon" />
+        </span>
+        <span className="sidebar-text">Logout</span>
+      </div>
     </div>
   );
 }

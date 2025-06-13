@@ -1,12 +1,12 @@
 .app-root {
-  background: #181818; /* ou la couleur de fond de ta maquette */
+  background: #181818;
   min-height: 100vh;
 }
 
 .header {
   background: #fff;
   padding: 0 32px;
-  border-bottom: 2px solid #e0e0e0; /* ligne horizontale */
+  border-bottom: 2px solid #e0e0e0;
   height: 90px;
   display: flex;
   align-items: center;
@@ -16,7 +16,8 @@
 
 .app-main {
   display: flex;
-  height: calc(100vh - 90px); /* ajuste selon la hauteur du header */
+  height: calc(100vh - 90px); /* Hauteur totale moins le header */
+  position: relative;
 }
 
 .sidebar {
@@ -26,16 +27,16 @@
   height: 100%;
   position: relative;
 }
-.sidebar::before {
+
+.sidebar::after {
   content: "";
   position: absolute;
   top: 0;
   right: 0;
   width: 2px;
-  height: 100vh;
+  height: 100%;
   background: #e0e0e0;
   z-index: 2;
- 
 }
 
 .app-content {

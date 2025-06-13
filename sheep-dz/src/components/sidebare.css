@@ -41,7 +41,10 @@
   transition: color 0.2s;
    font-family: 'Poppins', sans-serif;
 }
-
+.sidebar-logout {
+  margin-top: auto;
+  margin-bottom: 24px;
+}
 
 .sidebar-item:hover {
   background: #4CAF50; 
