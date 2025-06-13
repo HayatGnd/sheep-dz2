@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Ajoute ceci
+import { Link } from "react-router-dom";
 
 import homeIcon from "../assets/home.png";
 import sheepIcon from "../assets/card.png";
@@ -21,29 +21,37 @@ function Sidebar() {
           </Link>
         </li>
         <li className="sidebar-item">
-          <span className="icon-wrapper">
-            <img src={sheepIcon} alt="Sheeps" className="icon" />
-          </span>
-          <span className="sidebar-text">Sheeps</span>
+          <Link to="sheeps" className="sidebar-link">
+            <span className="icon-wrapper">
+              <img src={sheepIcon} alt="Sheeps" className="icon" />
+            </span>
+            <span className="sidebar-text">Sheeps</span>
+          </Link>
         </li>
         <li className="sidebar-item">
-          <span className="icon-wrapper">
-            <img src={calendarIcon} alt="Appointments" className="icon" />
-          </span>
-          <span className="sidebar-text">Appointments</span>
+          <Link to="/appointments" className="sidebar-link">
+            <span className="icon-wrapper">
+              <img src={calendarIcon} alt="Appointments" className="icon" />
+            </span>
+            <span className="sidebar-text">Appointments</span>
+          </Link>
         </li>
         <li className="sidebar-item">
-          <span className="icon-wrapper">
-            <img src={paymentIcon} alt="Payment" className="icon" />
-          </span>
-          <span className="sidebar-text">Payment</span>
+          <Link to="/payment" className="sidebar-link">
+            <span className="icon-wrapper">
+              <img src={paymentIcon} alt="Payment" className="icon" />
+            </span>
+            <span className="sidebar-text">Payment</span>
+          </Link>
         </li>
       </ul>
       <div className="sidebar-item sidebar-logout">
-        <span className="icon-wrapper">
-          <img src={logoutIcon} alt="Logout" className="icon" />
-        </span>
-        <span className="sidebar-text">Logout</span>
+        <Link to="/logout" className="sidebar-link">
+          <span className="icon-wrapper">
+            <img src={logoutIcon} alt="Logout" className="icon" />
+          </span>
+          <span className="sidebar-text">Logout</span>
+        </Link>
       </div>
     </div>
   );

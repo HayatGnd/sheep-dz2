@@ -58,3 +58,37 @@
 .sidebar-item:hover .sidebar-text {
   color: #fff;                    /* Texte blanc */
 }
+
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 22px;
+  padding: 12px 24px;
+  transition: background 0.2s;
+}
+
+.sidebar-link:hover {
+  background: #4CAF50;
+}
+
+.sidebar-link:hover .icon {
+  filter: brightness(0) invert(1);
+}
+
+.sidebar-link:hover .sidebar-text {
+  color: #fff;
+}
+
+.sidebar-item {
+  margin-bottom: 18px;
+  padding: 0;
+  border-radius: 22px;
+  cursor: pointer;
+  transition: background 0.2s;
+}

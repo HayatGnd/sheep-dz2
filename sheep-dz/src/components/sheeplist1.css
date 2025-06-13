@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap');
+.sheep-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.sheep-card {
+  background: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px #0001;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sheep-img {
+  width: 320px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.sheep-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.sheep-status {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 2px 10px;
+  font-size: 0.9em;
+  margin-left: 10px;
+}
+
+.status-good {
+  color: #f1c40f;
+  border-color: #f1c40f;
+  background: #fffbe6;
+}
+
+.status-excellent {
+  color: #27ae60;
+  border-color: #27ae60;
+  background: #eafaf1;
+}
+
+.sheep-details {
+  color: #888;
+  margin: 0.5rem 0;
+}
+
+.sheep-price {
+  font-size: 1.2em;
+  margin-bottom: 1rem;
+  color: #27ae60;
+}
+
+.sheep-actions {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+.btn-details,
+.btn-cart {
+  flex: 1;
+  padding: 0.5rem 0;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  min-width: 160px;
+}
+
+.btn-details {
+  background: #fff;
+  color: #27ae60;
+  border: 2px solid #27ae60;
+}
+
+.btn-cart {
+  background: #27ae60;
+  color: #fff;
+  border: 2px solid #27ae60;
+}
+.filters {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end; /* Aligne à droite */
+  margin-bottom: 2rem;
+}
+
+.custom-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: #fff url("data:image/svg+xml;utf8,<svg fill='black' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>") no-repeat left 1rem center/1.2em;
+  border: 2px solid #d1d1d1;
+  border-radius: 16px;
+  padding: 0.7rem 1.5rem 0.7rem 2.5rem;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 500;
+  color: #111;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  min-width: 160px;
+  box-sizing: border-box;
+  transition: border 0.2s;
+  font-family: 'Poppins', sans-serif;
+}
+
+.custom-select:focus {
+  border-color: #27ae60;
+}
+.sheep-grid,
+.sheep-card,
+.sheep-info,
+.sheep-title,
+.sheep-status,
+.sheep-details,
+.sheep-price,
+.sheep-actions,
+.btn-details,
+.btn-cart,
+.custom-select {
+  font-family: 'Poppins', sans-serif;
+}
+.btn-details,
+.btn-cart {
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+.btn-details:hover,
+.btn-cart:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px) scale(1.03);
+}

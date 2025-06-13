@@ -90,6 +90,13 @@
   transition: background 0.2s;
 }
 
+.sheep-btn,
+.see-more-btn {
+  transition: filter 0.2s, transform 0.2s;
+}
+
+.sheep-btn:hover,
 .see-more-btn:hover {
-  background: #388e3c;
+  filter: brightness(1.1);
+  transform: translateY(-2px) scale(1.03);
 }
