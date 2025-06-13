@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap');
-.sheep-grid {
+.sheep-grid {@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
@@ -144,4 +144,120 @@
 .btn-cart:hover {
   filter: brightness(1.1);
   transform: translateY(-2px) scale(1.03);
+}
+
+
+
+/* .................*/
+
+/* ...existing code... */
+
+.sheep-details-container {
+  background: #fff;
+  padding: 32px 24px;
+  max-width: 1100px;
+  margin: 32px auto;
+}
+
+.sheep-details-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #222;
+}
+
+.sheep-details-card {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  border: 1px solid #d1d5db;
+  border-radius: 18px;
+  padding: 24px;
+  background: #fff;
+}
+
+.sheep-image {
+  width: 320px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: none;
+  background: #f7f7f7;
+}
+
+.sheep-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  justify-content: center;
+}
+
+.sheep-info-row {
+  display: flex;
+  gap: 48px;
+  margin-bottom: 8px;
+}
+
+.label {
+  color: #888;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.value {
+  font-weight: 600;
+  color: #222;
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sheep-price {
+  color: #43b649;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 12px 0 8px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.buy-btn {
+  background: #43b649;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 28px;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+
+.buy-btn:hover {
+  background: #388e3c;
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #eafaf0;
+  color: #43b649;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 18px;
+  box-shadow: 0 1px 4px rgba(67,182,73,0.08);
+  transition: background 0.2s, color 0.2s;
+}
+
+.back-btn:hover {
+  background: #43b649;
+  color: #fff;
 }
