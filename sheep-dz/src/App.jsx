@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
-import Sheeps from './pages/sheeps.jsx'; // Assure-toi que ce fichier existe
+import Sheeps from './pages/sheeps.jsx';
+import SheepDetails from "./components/SheepDetails.jsx"; 
+import AdminDashboard from "./admin/pages/AdminDashboard.jsx"; // adapte le chemin si besoin
 
 function App() {
   return (
@@ -8,6 +10,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sheeps" element={<Sheeps />} />
+        <Route path="/sheep/:id" element={<SheepDetails />} />
+         <Route path="/admin" element={<AdminDashboard />} />
         {/* autres routes */}
       </Routes>
     </BrowserRouter>

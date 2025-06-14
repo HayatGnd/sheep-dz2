@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.dashboard-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  position: relative;
+}
+
+.card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 1rem;
+  font-family:"poppins",sans-serif
+}
+
+.card-title span {
+  font-size: 18px;
+}
+
+.card-value {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #111827;
+  margin-bottom: 0.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.card-sub {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.card-sub.green {
+  color:#80FF85;
+}
+
+/* Dashboard Graphs */
+.dashboard-graphs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.dashboard-graph-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+}
+
+.graph-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 1.5rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.graph-placeholder {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9fafb;
+  border-radius: 8px;
+  border: 2px dashed #d1d5db;
+  color: #6b7280;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Dashboard Bottom Section */
+.dashboard-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.dashboard-activity-card,
+.dashboard-approvals-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+}
+
+.activity-title,
+.approvals-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Activity List */
+.activity-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.activity-list li {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f3f4f6;
+  font-size: 14px;
+  color: #374151;
+}
+
+.activity-list li:last-child {
+  border-bottom: none;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 0.75rem;
+  flex-shrink: 0;
+}
+
+.dot.blue {
+  background: #3b82f6;
+}
+
+.dot.red {
+  background: #ef4444;
+}
+
+.activity-time {
+  margin-left: auto;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+/* Approval Items */
+.approval-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background: #fef3c7;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #92400e;
+  font-weight: 500;
+}
+
+.approval-badge {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 0.75rem;
+  flex-shrink: 0;
+}
+
+.approval-badge.yellow {
+  background: #f59e0b;
+}
+
+.approval-count {
+  margin-left: auto;
+  background: #f59e0b;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .dashboard-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-graphs {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-bottom {
+    grid-template-columns: 1fr;
+  }
+
+  .card-value {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-cards,
+  .dashboard-graphs,
+  .dashboard-bottom {
+    gap: 1rem;
+  }
+
+  .dashboard-card,
+  .dashboard-graph-card,
+  .dashboard-activity-card,
+  .dashboard-approvals-card {
+    padding: 1rem;
+  }
+
+  .card-value {
+    font-size: 1.75rem;
+  }
+
+  .graph-title,
+  .activity-title,
+  .approvals-title {
+    font-size: 16px;
+  }
+}
+.admin-root {
+  min-height: 100vh;
+  background: #f9fafb;
+}
+
+.admin-main {
+  display: flex;
+  flex-direction: row; /* IMPORTANT : côte à côte */
+  height: calc(100vh - 90px); /* adapte selon la hauteur de ton header */
+}
+
+.sidebar {
+  width: 220px;
+  min-width: 220px;
+  background: #fff;
+  /* autres styles */
+}
+
+.admin-content {
+  flex: 1;
+  padding: 2rem;
+  background: #f9fafb;
+  overflow-y: auto;
+}
+.dashboard-icon {
+  width: 28px;
+  height: 28px;
+  margin-left: 8px;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+.card-sub-icon {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+
+.dashboard-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.dashboard-activity-card,
+.dashboard-approvals-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
+}
+
+.activity-title,
+.approvals-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.activity-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.activity-list li {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #f3f4f6;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+.activity-list li:last-child {
+  border-bottom: none;
+}
+
+.activity-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.activity-icon img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.activity-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.activity-main {
+  font-weight: 500;
+}
+
+.activity-sub {
+  font-size: 0.95rem;
+  color: #888;
+  margin-top: 2px;
+}
+
+.activity-time {
+  margin-left: auto;
+  font-size: 0.95rem;
+  color: #9ca3af;
+}
+
+.approval-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background: #fef9e7;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: #222;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.approval-badge.yellow {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #fde68a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.approval-badge.yellow img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.approval-count {
+  margin-left: auto;
+  background: #fde68a;
+  color: #222;
+  padding: 0.25rem 1rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+}

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Poppins:wght@400;600&display=swap');
+
+.sheep-details-wrapper {
+  padding: 40px 32px;
+}
+
+.back-btn {
+  background: #eafaf0;
+  color: #43b649;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 32px;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 1px 4px rgba(67,182,73,0.08);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.back-btn:hover {
+  background: #43b649;
+  color: #fff;
+}
+.back-arrow {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.sheep-details-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: #222;
+}
+
+.sheep-details-card {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  border: 1.5px solid #d1d5db;
+  border-radius: 24px;
+  padding: 36px;
+  background: #fff;
+  max-width: 95%;
+}
+
+.sheep-details-img {
+  width: 340px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 28px;
+  background: #f7f7f7;
+  flex-shrink: 0;
+}
+
+.sheep-details-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  justify-content: center;
+}
+
+.sheep-details-row {
+  display: flex;
+  gap: 64px;
+  margin-bottom: 10px;
+}
+
+.label {
+  color: #888;
+  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.value {
+  font-weight: 700;
+  color: #222;
+  font-size: 1.25rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sheep-details-price {
+  color: #43b649;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 18px 0 12px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sheep-details-buy-btn {
+  background: #43b649;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 16px 0;
+  width: 80%;
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s;
+  display: block;
+}
+.sheep-details-buy-btn:hover {
+  background: #388e3c;
+}
